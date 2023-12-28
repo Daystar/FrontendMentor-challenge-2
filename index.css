@@ -1,0 +1,97 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(275, 100%, 97%);
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  font-family: "Work Sans";
+  background-size: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+  text-align: left;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 0;
+}
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+button:hover {
+  color: hsl(293, 86%, 58%);
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 868px;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.heading {
+  display: flex;
+  gap: 1rem;
+}
+.heading h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.accordion-items:not(:last-child) {
+  border-bottom: 2px solid hsl(275, 100%, 97%);
+}
+
+.accordion-items .icons img {
+  min-width: 30px;
+}
+
+.close {
+  display: none;
+}
+.answer {
+  background-color: hsl(0, 0%, 100%);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 200ms ease;
+}
+.answer p {
+  color: hsl(292, 16%, 49%);
+  padding: 1.5rem 0;
+}
+
+@media (max-width: 568px) {
+  body {
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+  }
+}
